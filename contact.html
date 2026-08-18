@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Ordertek | Request a Quote</title>
+  <meta name="description" content="Contact Ordertek for a custom forensic workstation quote. Email or use the form. Canadian pricing.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="canonical" href="https://www.ordertek.ca/contact.html">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="cdn">
+      <span class="maple">🍁</span>
+      <span>All prices in CDN Dollars</span>
+    </div>
+    <div class="links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Ordertek">
+      </a>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="workstations.html">Workstations</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Request a Quote</h1>
+    <p style="margin-top:0.75rem; color:#555;">Tell us what you need. We’ll respond with options and pricing in CDN.</p>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="section-inner">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start; max-width:960px; margin:0 auto;">
+        
+        <!-- Direct contact -->
+        <div>
+          <h2 style="font-size:1.4rem; margin-bottom:1rem;">Direct Contact</h2>
+          <p style="color:#555; margin-bottom:1.5rem;">Prefer email? Reach out directly.</p>
+          
+          <p style="margin-bottom:0.5rem;"><strong>Email</strong></p>
+          <p style="margin-bottom:1.5rem;">
+            <a href="mailto:info@ordertek.ca?subject=Forensic%20Workstation%20Quote%20Request" style="font-size:1.1rem; font-weight:600;">info@ordertek.ca</a>
+          </p>
+
+          <p style="margin-bottom:0.5rem;"><strong>Owner</strong></p>
+          <p style="margin-bottom:1.5rem;">John Bifolchi<br>Ordertek Corporation<br>Scarborough, Ontario</p>
+
+          <p style="color:#666; font-size:0.9rem;">We typically respond within one business day. Include any must-have specs, software, or budget range so we can prepare accurate options.</p>
+        </div>
+
+        <!-- Simple form (mailto fallback + note for Formspree later) -->
+        <div>
+          <h2 style="font-size:1.4rem; margin-bottom:1rem;">Quick Form</h2>
+          <form class="contact-form" action="mailto:info@ordertek.ca" method="post" enctype="text/plain">
+            <label for="name">Name / Agency</label>
+            <input type="text" id="name" name="Name" required placeholder="Your name or department">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required placeholder="you@agency.ca">
+
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="Phone" placeholder="Optional">
+
+            <label for="interest">Interest</label>
+            <select id="interest" name="Interest">
+              <option value="Lab Workstation">Lab Workstation</option>
+              <option value="Mobile / Field Unit">Mobile / Field Unit</option>
+              <option value="High-Capacity Storage">High-Capacity Storage</option>
+              <option value="Sager Notebook">Sager Notebook</option>
+              <option value="Parts Sourcing">Parts Sourcing</option>
+              <option value="Other">Other / Custom</option>
+            </select>
+
+            <label for="message">Requirements / Notes</label>
+            <textarea id="message" name="Message" placeholder="Core count, storage needs, write-blocker preference, software, budget range, timeline..."></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Request</button>
+          </form>
+          <p class="note">This opens your email client with the details filled in. You can also email us directly at info@ordertek.ca.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Ordertek</h4>
+        <p style="margin-bottom:0.75rem;">Custom forensic workstations for Canadian law enforcement and digital forensic professionals.</p>
+        <p>Scarborough, Ontario, Canada</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="workstations.html">Workstations</a>
+      <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:info@ordertek.ca">info@ordertek.ca</a>
+        <a href="contact.html">Request a Quote</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Ordertek Corporation. All rights reserved. Prices in Canadian Dollars.
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 768px) {
+      .section-inner > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</body>
+</html>
